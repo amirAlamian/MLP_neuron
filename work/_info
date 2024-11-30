@@ -1,0 +1,296 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/AVAJANG/Desktop/university/CA/Tamrin1_Mips_memari
+vAdder
+Z0 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z1 !s110 1732988139
+!i10b 1
+!s100 BKnN1JO4OVjzJ2T5b4E3C3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IX^iERIMR@20ag5Ye509M;2
+S1
+Z3 dC:/Users/AVAJANG/Desktop/university/embedded ai/HW3
+w1732983535
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Adder.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Adder.sv
+!i122 187
+L0 1 11
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1732988139.000000
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Adder.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Adder.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+n@adder
+vDemux
+R0
+R1
+!i10b 1
+!s100 kW?mR54T^GWa19JLZE9A=0
+R2
+InCoFPKh]2S^X[1;1G7i8n1
+S1
+R3
+w1732983227
+Z9 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv
+Z10 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv
+!i122 183
+L0 2 12
+R4
+R5
+r1
+!s85 0
+31
+R6
+Z11 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv|
+Z12 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv|
+!i113 0
+R7
+R8
+n@demux
+vinst_memory
+R0
+!s110 1732982523
+!i10b 1
+!s100 @E?k7mVTgc3:Fko<8Qa3c2
+R2
+IkQ7Ei[d7CSVWU407a13hj0
+S1
+R3
+w1732982514
+R9
+R10
+!i122 0
+L0 14 9
+R4
+R5
+r1
+!s85 0
+31
+!s108 1732982523.000000
+R11
+R12
+!i113 0
+R7
+R8
+vMultiplier
+R0
+R1
+!i10b 1
+!s100 LVNh32TReO[GXCbGh2l401
+R2
+ISI=Sk7?0a1@K4RdE1VD792
+S1
+R3
+w1732983220
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Multiplier.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Multiplier.sv
+!i122 185
+L0 2 11
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Multiplier.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Multiplier.sv|
+!i113 0
+R7
+R8
+n@multiplier
+vMux
+R0
+R1
+!i10b 1
+!s100 [KkNV>`n7VF:@>H8VL4@23
+R2
+IXACUhXm4KMeg:agDO^C3F1
+S1
+R3
+w1732984684
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Mux.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Mux.sv
+!i122 184
+L0 1 12
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Mux.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Mux.sv|
+!i113 0
+R7
+R8
+n@mux
+vPE
+R0
+Z13 !s110 1732988140
+!i10b 1
+!s100 @Q?AZS?=W^MN1YYZ2eo4A3
+R2
+Il4PdXo3:RBVb85O0JMDCR0
+S1
+R3
+w1732988132
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/PE.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/PE.sv
+!i122 190
+L0 2 90
+R4
+R5
+r1
+!s85 0
+31
+Z14 !s108 1732988140.000000
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/PE.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/PE.sv|
+!i113 0
+R7
+R8
+n@p@e
+vQuantizer
+R0
+R13
+!i10b 1
+!s100 2AhPN^eaEok0WOcJAd@Ln3
+R2
+IRai[1KEZE^n]iDk`LNmRz3
+S1
+R3
+w1732987640
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv
+!i122 191
+L0 1 10
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv|
+!i113 0
+R7
+R8
+n@quantizer
+vRegister
+R0
+R1
+!i10b 1
+!s100 :YQE>oh?m0R84AF0J1R?e0
+R2
+I9PlMn3kKjBO3YaN]dGk^I2
+S1
+R3
+w1732985519
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv
+!i122 186
+L0 2 19
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv|
+!i113 0
+R7
+R8
+n@register
+vRelu
+R0
+R13
+!i10b 1
+!s100 a152NeIA_D3QljKh^<efh0
+R2
+I4;XkCMgHmlnI;@]3H2_D`3
+S1
+R3
+w1732983685
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv
+!i122 188
+L0 1 9
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv|
+!i113 0
+R7
+R8
+n@relu
+vSRAM
+R0
+R13
+!i10b 1
+!s100 >3HiJEBX[@FXdHh3<IfGZ1
+R2
+Ib`KY_<<DB]OQNT3:DETTY1
+S1
+R3
+w1732984192
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv
+!i122 189
+L0 1 23
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv|
+!i113 0
+R7
+R8
+n@s@r@a@m
+vTestBench
+R0
+R13
+!i10b 1
+!s100 LMQQjzGHk55P=4jh@HWfh1
+R2
+I_]hl2;JVmJ;PO]RD_UcUZ3
+S1
+R3
+w1732988136
+8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv
+FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv
+!i122 192
+L0 2 29
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv|
+!i113 0
+R7
+R8
+n@test@bench
