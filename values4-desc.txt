@@ -1,0 +1,79 @@
+# Parameters:
+INPUT_WIDTH: 8
+INPUT_FRACTION: 6
+WEIGHT_WIDTH: 8
+WEIGHT_FRACTION: 6
+INPUT_NUM: 32
+
+# Quantized Inputs (Hex - Signed):
+FE
+6B
+F0
+36
+D5
+E3
+E5
+2D
+59
+CC
+7F
+50
+7F
+50
+C9
+C1
+6A
+79
+27
+A6
+D0
+F5
+C5
+F5
+0F
+33
+07
+10
+13
+F3
+F5
+C2
+
+# Quantized Weights (Hex - Signed):
+35
+02
+D5
+4F
+58
+58
+F9
+5D
+D8
+18
+57
+CA
+77
+7F
+DE
+E7
+09
+C2
+1F
+80
+A8
+80
+E1
+A7
+3A
+FB
+06
+DF
+3C
+C4
+40
+09
+
+# Neuron Output (Fixed-Point Representation after ReLU):
+49147  (OUTPUT_FRACTION = INPUT_FRACTION + WEIGHT_FRACTION)
+767  (OUTPUT_FRACTION = INPUT_FRACTION)
+127  (OUTPUT_WIDTH & OUTPUT_FRACTION as INPUT WIDTH & INPUT_FRACTION)
