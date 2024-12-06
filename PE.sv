@@ -1,4 +1,3 @@
-
 module PE #(
   parameter weight_bit = 32,
   parameter num_address = 512
@@ -24,7 +23,10 @@ module PE #(
     .out2(demux_output2)
   );
 
-  SRAM #weight_bit sram1(
+  SRAM #(
+    .num_bit(weight_bit),      
+    .num_address(num_address) )
+     sram1(
     .read_enable(read_enable),
     .write_enable(write_enable),
     .address(sram1_address),
@@ -32,7 +34,10 @@ module PE #(
     .write_data(demux_output1)
   );
 
-  SRAM #weight_bit sram2(
+    SRAM #(
+    .num_bit(weight_bit),      
+    .num_address(num_address) )
+    sram2(
     .read_enable(read_enable),
     .write_enable(write_enable),
     .address(sram2_address),
