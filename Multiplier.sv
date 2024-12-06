@@ -1,12 +1,15 @@
 
 module Multiplier #(
-    parameter num_bit
+    parameter INPUT_WIDTH,
+    parameter WEIGHT_WIDTH,
+    parameter MULTIPLIED_WIDTH
 ) (
-    input [num_bit -1:0] a,
-    input [num_bit - 1:0] b,
-    output [2*(num_bit - 1):0] out
+    input [INPUT_WIDTH -1:0] a,
+    input [WEIGHT_WIDTH - 1:0] b,
+    output signed [MULTIPLIED_WIDTH - 1:0] out
 );
 
-  assign out = a * b;
+  assign out = $signed(a) * $signed(b);
+
 
 endmodule

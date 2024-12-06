@@ -1,9 +1,9 @@
 module Relu #(
-    parameter num_bit
+    parameter NUM_BIT
 ) (
-    input  [num_bit - 1:0] x,
-    output [num_bit - 1:0] y
+    input  [NUM_BIT - 1:0] x,
+    output [NUM_BIT - 1:0] y
 );
 
-  assign y = x[num_bit-1] ? 1'b0 : x;
+  assign y = x[NUM_BIT - 1] ? 1'b0 : x;
 endmodule

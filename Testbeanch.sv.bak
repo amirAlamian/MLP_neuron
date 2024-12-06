@@ -9,61 +9,46 @@ parameter PE_OUT_WIDTH = 8;
 module TestBench ();
   reg clk;
   reg rst;
-  reg [INPUT_WIDTH - 1:0] data[0:INPUT_NUM - 1];
+  reg [INPUT_WIDTH - 1:0] input_data[0:INPUT_NUM - 1];
   reg [WEIGHT_WIDTH - 1:0] weight[0:INPUT_NUM - 1];
   wire [PE_OUT_WIDTH - 1:0] pe_out;
   reg [WEIGHT_WIDTH - 1:0] input_weight;
-  reg [INPUT_WIDTH - 1:0] input_data;
   reg new_weight;
-  reg input_available;
+  reg mux_select;
+  reg demux_select;
+  reg read_enable;
   localparam CLK_PERIOD = 10;
 
   always #(CLK_PERIOD / 2) clk = ~clk;
 
   initial begin
-    $readmemh("./inputs.txt", data);
+    $readmemh("./testcases/values4.txt", input_data);
     $readmemh("./weights.txt", weight);
     #0 rst <= 1'b1;
     clk <= 1'b0;
-    input_available = 0;
+    mux_select = 0;
+    demux_select = 0;
+    read_enable = 0;
+    $display("weight 0 = %h", weight[0]);
+    $display("input_data 0 = %h", input_data[0]);
     #(CLK_PERIOD / 2) rst <= 0;
-    #(4 * CLK_PERIOD / 3) input_available <= 1;
     #2000 $stop;
   end
 
 
   int initial_address = 0;
-
   always @(posedge clk, rst) begin
     if (rst) begin
       initial_address = 0;
     end else begin
       input_weight <= weight[initial_address];
-      if (initial_address < INPUT_NUM - 1) begin
+      if (initial_address < INPUT_NUM) begin
         initial_address += 1;
-      end
-      if (initial_address <= INPUT_NUM) begin
         new_weight <= 1;
       end
     end
   end
 
-
-  int input_address = 0;
-  always @(negedge clk, rst) begin
-    if (rst) begin
-      input_address = 0;
-    end else begin
-      if (input_available) begin
-        input_data <= data[input_address];
-        input_address += 1;
-        if (input_address > INPUT_NUM) begin
-          input_available <= 0;
-        end
-
-      end
-    end
-  end
 
   always @(negedge clk) begin
     new_weight = 0;
@@ -77,11 +62,13 @@ module TestBench ();
       .FRACTION_IN_BIT(INPUT_FRACTION + WEIGHT_FRACTION),
       .FRACTION_OUT_BIT(FRACTION_OUT_BIT)
   ) pe (
+      .mux_select(mux_select),
+      .demux_select(demux_select),
+      .read_enable(read_enable),
       .new_weight(new_weight),
-      .input_available(input_available),
       .clk(clk),
       .reset(rst),
-      .input_data(input_data),
+      .input_data(input_data[0]),
       .weight(input_weight),
       .pe_out(pe_out)
   );

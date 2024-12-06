@@ -1,32 +1,4 @@
-{C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module Quantizer
-
-Top level modules:
-	Quantizer
-
-} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module SRAM
-
-Top level modules:
-	SRAM
-
-} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Multiplier.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Multiplier.sv}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module Multiplier
-
-Top level modules:
-	Multiplier
-
-} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module Demux
-
-Top level modules:
-	Demux
-
-} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv}
+{C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv}
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module Relu
 
@@ -40,17 +12,34 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 Top level modules:
 	Adder
 
-} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv} {0 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv}
+} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv}
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module TestBench
-** Error: (vlog-13069) C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv(18): near "=": syntax error, unexpected '=', expecting ++ or --.
-
-} {4.0 5.0} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv}
-Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
--- Compiling module Register
+-- Compiling module Demux
 
 Top level modules:
-	Register
+	Demux
+
+} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM
+
+} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/PE.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/PE.sv}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module PE
+
+Top level modules:
+	PE
+
+} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package Testbeanch_sv_unit
+-- Compiling module TestBench
+
+Top level modules:
+	TestBench
 
 } {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Mux.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Mux.sv}
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -58,5 +47,33 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
 Top level modules:
 	Mux
+
+} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Quantizer
+
+Top level modules:
+	Quantizer
+
+} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller.sv}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller2.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller2.sv}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module Controller2
+
+Top level modules:
+	Controller2
 
 } {} {}}
