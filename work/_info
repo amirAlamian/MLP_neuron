@@ -10,10 +10,10 @@ z2
 cModel Technology
 Z0 dC:/Users/AVAJANG/Desktop/university/CA/Tamrin1_Mips_memari
 T_opt
-!s110 1733499837
-VSZ?I<Ybz91]_4KX7?@04L2
+!s110 1733581902
+VR]4=GFzZkzU2Nn]=Y92@[2
 Z1 04 9 4 work TestBench fast 0
-=1-7c10c925c579-67531bbd-2a3-6044
+=1-7c10c925c579-67545c4d-37b-5e68
 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
@@ -30,7 +30,7 @@ R3
 R0
 vAdder
 Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z5 !s110 1733499834
+Z5 !s110 1733581892
 !i10b 1
 !s100 3Sb<7XlK3DYJP7Sn>9C[C0
 Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -40,14 +40,14 @@ Z7 dC:/Users/AVAJANG/Desktop/university/embedded ai/HW3
 w1733166824
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Adder.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Adder.sv
-!i122 1291
+!i122 1303
 L0 1 11
 Z8 VDg1SIo80bB@j0V0VzS_@n1
 Z9 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z10 !s108 1733499834.000000
+Z10 !s108 1733581892.000000
 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Adder.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Adder.sv|
 !i113 0
@@ -56,24 +56,24 @@ R2
 n@adder
 vController
 R4
-Z12 !s110 1733499835
+R5
 !i10b 1
-!s100 VA<5]mJPKlA=>Gi6=1O^I0
+!s100 1o3_V1ziYL9ddO[hb161l1
 R6
-IJ5JVcGC25LEaBOeQD^AG;2
+Iilk]jR5D0D9F_lHm[^We@3
 S1
 R7
-w1733164871
+w1733581889
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller.sv
-!i122 1297
-L0 1 92
+!i122 1309
+Z12 L0 1 84
 R8
 R9
 r1
 !s85 0
 31
-Z13 !s108 1733499835.000000
+R10
 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller.sv|
 !i113 0
@@ -82,7 +82,7 @@ R2
 n@controller
 vController2
 R4
-R12
+!s110 1733499835
 !i10b 1
 !s100 F9n5V78<;4ULGQQaZB4QM3
 R6
@@ -93,13 +93,13 @@ w1733432311
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller2.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller2.sv
 !i122 1298
-L0 1 84
+R12
 R8
 R9
 r1
 !s85 0
 31
-R13
+!s108 1733499835.000000
 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller2.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Controller2.sv|
 !i113 0
@@ -116,9 +116,9 @@ I8?]0>Ql7Wa`XLQaQl<BOK0
 S1
 R7
 w1733168595
-Z14 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv
-Z15 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv
-!i122 1287
+Z13 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv
+Z14 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv
+!i122 1299
 L0 2 13
 R8
 R9
@@ -126,8 +126,8 @@ r1
 !s85 0
 31
 R10
-Z16 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv|
-Z17 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv|
+Z15 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv|
+Z16 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Demux.sv|
 !i113 0
 R11
 R2
@@ -142,8 +142,8 @@ IkQ7Ei[d7CSVWU407a13hj0
 S1
 R7
 w1732982514
+R13
 R14
-R15
 !i122 0
 L0 14 9
 R8
@@ -152,8 +152,8 @@ r1
 !s85 0
 31
 !s108 1732982523.000000
+R15
 R16
-R17
 !i113 0
 R11
 R2
@@ -169,7 +169,7 @@ R7
 w1733499832
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Multiplier.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Multiplier.sv
-!i122 1289
+!i122 1301
 L0 2 14
 R8
 R9
@@ -195,7 +195,7 @@ R7
 w1733164110
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Mux.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Mux.sv
-!i122 1288
+!i122 1300
 L0 1 12
 R8
 R9
@@ -213,16 +213,16 @@ vPE
 R4
 R5
 !i10b 1
-!s100 66G6ke4]WARfH`Y3LgOE70
+!s100 kbT]zTZMY[599?bb?NDdf1
 R6
-ISfYMDEcKkY3H[PimT@2VD1
+Ig?;`_g[EfE:c81BDed1n]1
 S1
 R7
-w1733499544
+w1733501151
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/PE.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/PE.sv
-!i122 1294
-L0 1 149
+!i122 1306
+L0 1 136
 R8
 R9
 r1
@@ -235,32 +235,6 @@ R10
 R11
 R2
 n@p@e
-vQuantizer
-R4
-R12
-!i10b 1
-!s100 RTRQ3a5[T>ChL?kUiMDTb0
-R6
-IP8b=F]Q34Zm>c1F@A<:mX0
-S1
-R7
-w1733499389
-Z18 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv
-Z19 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv
-!i122 1295
-Z20 L0 1 19
-R8
-R9
-r1
-!s85 0
-31
-R10
-Z21 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv|
-Z22 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv|
-!i113 0
-R11
-R2
-n@quantizer
 vquantizer
 R4
 !s110 1733166488
@@ -271,21 +245,47 @@ IE3o:nBXA0^jRGW_6VIVm93
 S1
 R7
 w1733166485
-R18
-R19
+Z17 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv
+Z18 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv
 !i122 305
-R20
+Z19 L0 1 19
 R8
 R9
 r1
 !s85 0
 31
 !s108 1733166488.000000
-R21
-R22
+Z20 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv|
+Z21 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Quantizer.sv|
 !i113 0
 R11
 R2
+vQuantizer
+R4
+R5
+!i10b 1
+!s100 RTRQ3a5[T>ChL?kUiMDTb0
+R6
+IP8b=F]Q34Zm>c1F@A<:mX0
+S1
+R7
+w1733499389
+R17
+R18
+!i122 1307
+R19
+R8
+R9
+r1
+!s85 0
+31
+R10
+R20
+R21
+!i113 0
+R11
+R2
+n@quantizer
 vRegister
 R4
 R5
@@ -298,7 +298,7 @@ R7
 w1733430319
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Register.sv
-!i122 1290
+!i122 1302
 L0 2 21
 R8
 R9
@@ -324,7 +324,7 @@ R7
 w1733166867
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Relu.sv
-!i122 1292
+!i122 1304
 L0 1 9
 R8
 R9
@@ -350,7 +350,7 @@ R7
 w1733433766
 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv
 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/SRAM.sv
-!i122 1293
+!i122 1305
 L0 1 29
 R8
 R9
@@ -366,53 +366,53 @@ R2
 n@s@r@a@m
 XTestbeanch_sv_unit
 R4
-R12
-VO=jkGHQRUFIWKRlV7Ool31
+R5
+V^k1iO]2QY7I5?_3:km;<N0
 r1
 !s85 0
 !i10b 1
-!s100 3JFTF2e7?]bRKEH12_e1f3
-IO=jkGHQRUFIWKRlV7Ool31
+!s100 2Ij3`?bZ9dcT`GGI0ZP^B0
+I^k1iO]2QY7I5?_3:km;<N0
 !i103 1
 S1
 R7
-Z23 w1733499464
-Z24 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv
-Z25 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv
-!i122 1296
+Z22 w1733501044
+Z23 8C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv
+Z24 FC:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv
+!i122 1308
 L0 2 0
 R9
 31
-R13
-Z26 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv|
-Z27 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv|
+R10
+Z25 !s107 C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv|
+Z26 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/AVAJANG/Desktop/university/embedded ai/HW3/Testbeanch.sv|
 !i113 0
 R11
 R2
 n@testbeanch_sv_unit
 vTestBench
 R4
-DXx4 work 18 Testbeanch_sv_unit 0 22 O=jkGHQRUFIWKRlV7Ool31
-R12
+DXx4 work 18 Testbeanch_sv_unit 0 22 ^k1iO]2QY7I5?_3:km;<N0
+R5
 R8
 r1
 !s85 0
 !i10b 1
-!s100 KF;CA9V_98?a_Y5::WljR1
-IL]AdZO@HYU8V3VHjK2j3f1
+!s100 SNok1VL8CDBJjAieIAJMN0
+I75W@HT6oHzZ=limzPg?dg3
 !s105 Testbeanch_sv_unit
 S1
 R7
+R22
 R23
 R24
-R25
-!i122 1296
-L0 9 81
+!i122 1308
+L0 9 80
 R9
 31
-R13
+R10
+R25
 R26
-R27
 !i113 0
 R11
 R2

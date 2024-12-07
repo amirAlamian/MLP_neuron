@@ -60,7 +60,6 @@ module TestBench ();
         if (input_address > INPUT_NUM) begin
           input_available <= 0;
         end
-
       end
     end
   end

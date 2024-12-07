@@ -116,20 +116,7 @@ module PE #(
     .out(pe_out)
   );
 
-  // Controller #INPUT_NUM controller(
-  //   .clk(clk),
-  //   .reset(reset),
-  //   .start(start),
-  //   .mux_select(mux_select),
-  //   .demux_select(demux_select),
-  //   .read_enable(read_enable),
-  //   .write_enable(write_enable),
-  //   .sram1_address(sram1_address),
-  //   .sram2_address(sram2_address),
-  //   .done(done)
-  // );
-
-    Controller2 #INPUT_NUM controller(
+    Controller #INPUT_NUM controller(
     .clk(clk),
     .reset(reset),
     .start(start),

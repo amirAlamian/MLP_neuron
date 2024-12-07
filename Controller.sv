@@ -4,89 +4,81 @@ module Controller #(
     input clk,
     input reset,
     input start,
+    input new_weight,
+    input input_available,
     output reg mux_select,
     output reg demux_select,
     output reg read_enable,
-    output reg write_enable,
-    output reg [INPUT_NUM-1:0] sram1_address,
-    output reg [INPUT_NUM-1:0] sram2_address,
-    output reg done
+    output reg sram1_write_enable,
+    output reg sram2_write_enable,
+    output reg adder_register_write_enable,
+    output reg [INPUT_NUM-1:0] sram1_write_address,
+    output reg [INPUT_NUM-1:0] sram2_write_address,
+    output reg [INPUT_NUM-1:0] sram1_read_address,
+    output reg [INPUT_NUM-1:0] sram2_read_address
 );
 
-  typedef enum logic [2:0] {
-    idle,
-    read_weight,
-    read_input,
-    compute,
-    write_output,
-    done_state
-  } state_t;
+  reg write_turn;
+  reg read_turn;
 
-  state_t current_state, next_state;
-
-  reg [INPUT_NUM-1:0] addr_counter;
-
-  always_ff @(posedge clk or posedge reset) begin
+  always @(posedge new_weight, posedge reset) begin
     if (reset) begin
-      current_state <= idle;
+      demux_select <= 0;
+      sram1_write_enable <= 0;
+      sram2_write_enable <= 0;
+      sram1_write_address <= -1;
+      sram2_write_address <= -1;
+      write_turn <= 0;
     end else begin
-      current_state <= next_state;
+      if (write_turn == 0) begin
+        sram2_write_enable <= 0;
+        sram1_write_enable <= 1;
+        demux_select <= 0;
+        sram1_write_address += 1;
+        if (sram1_write_address + 1'b1 == 0) begin
+          write_turn <= 1;
+        end
+      end else begin
+        sram2_write_enable <= 1;
+        sram1_write_enable <= 0;
+        demux_select <= 1;
+        sram2_write_address += 1;
+        if (sram2_write_address + 1'b1 == 0) begin
+          write_turn <= 0;
+        end
+      end
     end
   end
 
-  always_comb begin
-    next_state = current_state;
-    mux_select = 0;
-    demux_select = 0;
-    read_enable = 0;
-    write_enable = 0;
-    sram1_address = 0;
-    sram2_address = 0;
-    done = 0;
 
-    case (current_state)
-      idle: begin
-        if (start) begin
-          next_state = read_weight;
+  always @(posedge clk, posedge reset) begin
+    if (reset || ~input_available) begin
+      read_enable <= 0;
+      mux_select <= 0;
+      sram1_read_address <= -1;
+      sram2_read_address <= -1;
+      read_turn <= 0;
+      adder_register_write_enable <= 0;
+    end else begin
+      read_enable <= 1;
+      adder_register_write_enable <= 1;
+      if (read_turn == 0) begin
+        mux_select <= 0;
+        sram1_read_address += 1;
+        if (sram1_read_address + 1'b1 == 0) begin
+          read_turn <= 1;
+        end
+      end else begin
+        read_enable <= 1;
+        mux_select  <= 1;
+        sram2_read_address += 1;
+        if (sram2_read_address + 1'b1 == 0) begin
+          read_turn <= 0;
         end
       end
 
-      read_weight: begin
-        read_enable = 1;
-        sram1_address = addr_counter;
-        next_state = read_input;
-      end
-
-      read_input: begin
-        read_enable = 1;
-        sram2_address = addr_counter;
-        next_state = compute;
-      end
-
-      compute: begin
-        mux_select   = 1;
-        demux_select = 1;
-        next_state   = write_output;
-      end
-
-      write_output: begin
-        write_enable = 1;
-        next_state   = done_state;
-      end
-
-      done_state: begin
-        done = 1;
-        next_state = idle;
-      end
-    endcase
-  end
-
-  always_ff @(posedge clk or posedge reset) begin
-    if (reset) begin
-      addr_counter <= 0;
-    end else if (current_state == write_output) begin
-      addr_counter <= addr_counter + 1;
     end
+
   end
 
 endmodule
